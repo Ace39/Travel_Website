@@ -1,0 +1,679 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/*these are necessary to be written in every code*/
+/*.container
+{
+    color: aliceblue;
+    padding-top: 20px;
+    padding-left: 50px;
+    border: solid green;
+    
+}
+.nav-items a{
+    color: aliceblue;
+    float: right;
+    padding-right: 50px;
+    
+    
+}*/
+/*.container .navbar .nav-items{
+    list-style: none;
+}
+*/
+html{
+    /*
+    font-size:10px ;
+    16px-----------100%
+    10px------------(100/16)*10=62.5%
+    
+    */
+    font-size: 62.5%;
+}
+/*.navbar{
+    /*border: 2px solid green;*/
+
+.header .logo,.header .navbar a{
+    color:white;
+}
+.header .logo{
+    float: left;
+   /* padding-top: 20px;
+    padding-left: 50px;*/
+    font-size: 3.5rem;
+    margin-top: 0.7em;
+    padding-left: 50px;
+
+}
+.header .navbar .nav-items{
+    float: right;
+    padding-right: 50px;
+    padding-top: 30px;
+
+    
+}
+.header .navbar .nav-item a{
+    text-decoration: none;
+
+    
+}
+.nav-item a:link,.nav-item a:visited{
+    color: white;
+}
+.header .navbar .nav-item{
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    padding-top: 15px;
+    padding: 1rem;/*this created space between like this :- home    about     contact */
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+.header
+{
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/pexels-drift-shutterbug-2085998.jpg);
+    background-repeat: no-repeat;
+    height: 95vh;
+    background-size: cover;
+background-position: center
+}
+
+/*###########################################################header content#################################################################*/
+.header-content .top , .header-content .pop,.header-content .sop-button a{
+color: white;
+text-decoration: none;
+text-align: center;
+}
+.header-content .sop-button a{
+    color: black;
+    font-weight: 800;
+    /*border: 5px solid green;*/
+    font-size: 1.5rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    background-color: white;
+    
+}
+.header-content{
+    /*border: 5px solid red;*/
+    padding-bottom: 50px;
+    max-width: 1200px;
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 20em;
+    
+}
+.header-content .pop{
+padding-bottom: 10px;
+text-align: center;
+
+}
+.header-content .sop-button
+{
+    text-align: center;
+}
+.header-content .pop{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.header-content .top{
+    padding: 2em;
+    word-spacing: 0.5em;
+}
+
+/*
+.header{
+    position: relative;
+}
+.header-content{
+    position: absolute;
+    border: 2px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+*/
+/*#########################################################################################################################################################################################*/
+/*###########################SHOWCASE##################################################################*/
+.showcase{
+    /*background-color: rgb(19, 178, 240);*/
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/stars.jpg);
+    background-size: cover;
+    height: 100hv;
+    padding: 10em ;/*this means padding top and padding bottom both are included*/
+
+}
+.row1{
+    /*border: 2px solid green;*/
+    height: 250px;
+    margin-bottom:10em ;/*to create pace in between the boxes*/
+}
+.row2{
+/*border: 2px solid red;*/
+    height: 250px;
+}
+.container
+{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto 0;
+}
+.row1 .img,.row2 .text{
+    width: 50%;
+    float: left;
+}
+.row1 .text,.row2 .img{
+    width:50%;
+    float: right;
+}
+.row1 .text{
+    background-color:black;
+    height: 100%;
+}
+.row1 .img{
+   /* border: 2px solid green;*/
+    height: 100%;
+}
+.row2 .img{
+    /*border: 2px solid green;*/
+    height: 100%;
+}
+.row1 .img .images{
+    background: url(../img/pexels-antonio-visconti-16244433.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    object-fit:cover ;
+}
+.row2 .img .images{
+    background: url(../img/pexels-carmen-ong-1353242.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: inline-block;
+}
+.row1 .text h1{
+color: white;
+font-size: 30px;
+text-decoration: underline;
+padding-left: 20px;
+}
+.row2 .text h1{
+color: bisque;
+font-size: 30px;
+text-decoration: underline;
+}
+.row1 .text p{
+    margin-top: 40px;
+    color: aliceblue;
+    font-size: 15px;
+    padding-left: 20px;
+    
+}
+.row2 .text p{
+    margin-top: 40px;
+    color: aliceblue;
+    font-size: 15px;
+    padding-right: 20px;
+    
+}
+.row1 .text .more,.row2 .text .more{
+    border: 2px solid white;
+    /*margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 95px;*/
+   margin-left: 20px;
+   padding: 10px;
+   display: inline;
+   border-radius: 50%;
+   
+}
+.row1 .text .more a,.row2 .text .more a{
+    color: white;
+    
+}
+.row1 .text .more a,.row2 .text .more a{
+    
+    font-size: 20px;
+    text-decoration: none;
+
+    
+}
+
+/*.row1{
+    border: 2px solid green;
+    height: 500px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.row2{
+    border: 2px solid red;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;}/*to keep the the thing or box place to be in center*/
+/*.row1 .text .more a:hover,.row2 .text .more a:hover{
+    background-color: grey;
+    background-size: cover;
+}*/
+.feature{
+background-color: rgba(128, 128, 128, 0.438);
+}
+
+.featurebox{
+    /*border: 2px solid black;*/
+    
+    margin-left: 10%;
+    padding: 40px;
+}
+.box1,.box2,.box3{
+    /*border: 2px solid green;*/
+    display: inline-block;
+    height: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+.box1{
+    float: left;
+    width: 33%;
+    background-color: red;
+    /*margin-right: 5%;*/
+}
+.box3{
+    float: right;
+    width:33%;
+    background-color: red;
+    /*margin-left: 5%;*/
+}
+.box2{
+    width: 34%;
+    background-color: black;
+}
+.box1 h1,.box2 h1,.box3 h1{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: cemter;
+    text-decoration: underline;
+}
+.box1 p,.box2 p,.box3 p{
+    padding-top: 10px;
+    font-size: small;
+    align-items: center;
+    padding: 20px 20px;
+    
+}
+.footer{
+    background-color:rgba(0, 0, 0, 0.847) ;
+    color: white;
+    text-align: center;
+    
+    
+}
+.social{
+    padding: 30px;
+    word-spacing: 30px;
+  
+    
+}
+
+.footer p{
+    text-align: center;
+    font-size: 20px;
+
+}
+.about_nav{
+    background-color: rgba(0, 0, 0, 0.863);
+    /*border: 2px solid wheat;*/
+    
+}
+
+.about_nav h1{
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+    margin-top: 30px;
+   /* border: 2px solid white;*/
+    display: inline;
+    
+   
+    
+    
+    
+}
+
+.about_nav  a{
+    color: white;
+    text-decoration: none;
+    
+
+    
+    
+}
+.about_nav .links
+{
+    /*border: 2px solid wheat;*/
+    display: inline;
+    float: right;
+    
+}
+
+.about_nav .block{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    height: 50px;
+}
+.about_nav .links a{
+    padding: 5px;
+    font-size: 15px;
+    
+    
+}
+.about_nav .whole{
+/*border: 2px solid red;*/
+padding-top: 50px;/*necssary step*/
+}
+
+.aboutUs
+{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.aboutUs .page{
+ /*   border: 2px solid green;*/
+    padding-top: 20px;
+}
+.aboutUs h1{
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+.aboutUs hr{
+    height: 4px;
+    background-color: red;
+}
+.aboutUs .page p{
+    font-size: 15px;
+    padding-top: 20px;
+}
+/* about-wraper li::before{
+    content: '\2713';}*/
+    .list-content .left ul,.list-content .right ul{
+        list-style: none;
+        font-size: 15px;
+    }
+    .list-content .left{
+        /*border: 2px solid pink;*/
+        display: inline-block;
+        
+    }
+    .list-content .right{
+        /*border: 2px solid rgb(212, 34, 64);*/
+        /*display: inline-block;*/
+        float: right;
+    }
+    .list-content{
+        /*border: 2px solid blue;*/
+        max-width: 900px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .list-content ul li::before{
+        content: '\2713';
+        color: red;
+        margin-right: 10px;
+    }
+    .guide{
+        max-width: 1000px;
+        width: 90%;
+        margin: 0 auto;
+        /*border: 2px solid blue;*/
+        margin-top: 20px;
+    }
+    .guide ul{
+        list-style: none;
+    }
+    .guide .b1,.guide .b2,.guide .b3,.guide .b4{
+        /*border: 2px solid green;*/
+        display: inline-block;
+        width: 24%;
+        
+    }
+    .guide ul li h1{
+        
+        font-weight: 700;
+        color: red;
+        text-align: center;
+    }
+    .guide  .font{
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    /*.contactUs{
+        /*border: 2px solid red;
+        background: linear-gradient(25deg , #d64c7f,#ee4758 50%);
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        padding: 1rem;
+        box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.331);
+        
+    }
+    .contactUs p{
+        color: white;
+    }
+    
+    .contactUs .phrase{
+       border: 2px solid white;
+       display: inline-block;
+       
+       
+       
+    }
+   
+   .cta-banner-right{
+ width: 40%;
+ float: right;
+   }
+   .btn-cta{
+       text-align: center;
+       display: inline-block;
+       font-size: 10px;
+       font-weight: 700;
+       text-transform: uppercase;
+       border: 4px solid white;
+       padding: 0.3em 2.5em;
+       letter-spacing: 0.5rem;
+       color: white;
+       text-decoration: none;
+
+   }
+    .contactUs::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+*/
+.contactUs{
+    /*border: 2px solid red;*/
+  margin-top: 20px;
+  background: linear-gradient(25deg , #d64c7f,#ee4758 50%);
+  box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.331);
+  padding-bottom: 10px;
+  
+}
+.phrase
+{
+    /*border: 2px solid white;*/
+    display: inline-block;
+}
+.hehe{
+    border: 2px solid white;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+
+}
+.hehe a{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 20px ;
+    
+    
+}
+.contact-form{
+    background-color: rgba(128, 128, 128, 0.498);
+    
+}
+.form-wrapper
+{ padding-top: 40px;
+    width: 90%;
+    max-width: 1200x;
+    margin: 0 auto;
+}
+/*another way of seperating two block
+
+.form-wraper::after{
+content:'';
+display:block;
+clear:both;
+}
+.company-address{
+border: 2px solid black;
+width: 49%;
+float:left;
+}
+.form{
+    border: 2px solid black;
+    width: 49%;
+    float: right;
+}
+*/
+
+.company-address{
+border: 2px solid black;
+width: 45%;
+display: inline-block;
+background-color: rgba(255, 255, 255, 0.804);
+padding-left:10px ;
+height: 500px;
+}
+.form{
+    border: 2px solid black;
+    width: 45%;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.804);
+    height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+.company-address i{
+    display: inline-block;
+    margin-right: 10px;
+} 
+.company-address h1{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.adress-group p{
+padding-bottom: 20px;
+padding-top: 5px;
+font-size: 14px;
+}
+.company-address img{
+    
+    min-width: 90%;
+    object-fit: cover;
+    object-position: right;
+     max-height:25rem;
+    
+}
+.form h1{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.form hr{
+    
+height: 3px;
+background-color: red;
+padding-bottom: 2px;
+margin-bottom: 20px;
+}
+.form p{
+    padding-bottom: 20px;
+    font-size: medium;
+    font-weight: 600;
+}
+.form label{
+    display: block;
+}
+.form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form label::after{
+    content: '*';
+    color: red;
+}
+.form textarea{
+    width: 100%;
+    height: 180px;
+    padding: 1rem;
+}
+.form .form-butn{
+    display: block;
+    margin: 0 auto;
+    padding :0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    
+
+}
+.form button{
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    outline: none;
+}
+
